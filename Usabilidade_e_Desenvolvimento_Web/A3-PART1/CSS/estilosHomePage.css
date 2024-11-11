@@ -1,0 +1,62 @@
+header {
+    background-color: #4b3fb3;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 30px; /* Adiciona padding para espaçamento interno */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0; /* Remove margem do h1 */
+}
+
+header p {
+    margin: 0; /* Remove margem do p */
+    margin-top: 5px; /* Aproxima o p do h1 */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;  /*Escolher Fonte*/
+    color: #4b3fb3; /*Cor de fonte*/
+    background-color: #f2f2f2; /*Cor de background*/
+    margin: 0px; /*Margem, espaço antes e após a caixa*/
+    padding-top: 180px
+}
+
+.servicos {
+    background-color: #FFFFFF;
+    margin: 10px auto; /*auto -> Centraliza caso tenha espaço*/
+    padding: 20px;
+    border-radius: 8px; /*Deixa as bordas arredondadas*/
+    max-width: 800px; /*Limita a caixa ao tamanho 800px para que seja possível centralizar*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Cria uma sombra ao redor da caixa*/
+}
+
+.missao-visao {
+    background-color: #FFFFFF;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #4b3fb3;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    bottom: 0; /*Coloca a o rodapé abaixo*/
+    width: 100%;
+    z-index: 1; /*Coloca o footer acima dos outros elementos*/
+}
