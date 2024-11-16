@@ -5,11 +5,12 @@ header {
     padding: 30px; /* Adiciona padding para espaçamento interno */
     text-align: center;
     position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    top: 0; /*Fixa no topo*/ 
+    width: 100%; /*Determina que vai ocupar a largura inteira da página*/
+    z-index: 1; /*Deixa o header acima das outras coisas*/
 }
 
+/*Processo para diminuir a margem entre o h1 e o p do header*/
 h1 {
     font-size: 35px;
     margin: 0; /* Remove margem do h1 */
@@ -19,15 +20,14 @@ header p {
     margin: 0; /* Remove margem do p */
     margin-top: 5px; /* Aproxima o p do h1 */
 }
-
-
+/*---------------------------------------------------------------------*/
 
 body {
     font-family: Arial, sans-serif;  /*Escolher Fonte*/
     color: #4b3fb3; /*Cor de fonte*/
     background-color: #f2f2f2; /*Cor de background*/
     margin: 0px; /*Margem, espaço antes e após a caixa*/
-    padding-top: 180px
+    padding-top: 180px /*paddin acima do body que as classes não sejam comidas pelo header*/
 }
 
 .servicos {
