@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+    <title>Jogo da Sorte - Poketoys</title>
+</head>
+<body>
+    <header>
+        <h1>Poketoys</h1>
+
+        <section class="navegacao">
+            <div class="botoes-navegacao">
+                <a href="index.html" class="botao">Home</a>
+                <a href="sobre.html" class="botao">Sobre</a>
+                <a href="produtos.html" class="botao">Produtos</a>
+                <a href="contato.html" class="botao">Contato</a>
+                <a href="jogo.html" class="botao">Jogo da Sorte</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="jogo">
+            <h2>Jogo da Sorte</h2>
+            <p>Escolha seis números entre 1 e 100 para tentar a sorte e ganhar descontos nos nossos produtos e serviços!</p>
+
+            <form id="formJogo">
+                <label for="num1">Número 1:</label>
+                <input type="number" id="num1" name="num1" min="1" max="100" required>
+                
+                <label for="num2">Número 2:</label>
+                <input type="number" id="num2" name="num2" min="1" max="100" required>
+                
+                <label for="num3">Número 3:</label>
+                <input type="number" id="num3" name="num3" min="1" max="100" required>
+                
+                <label for="num4">Número 4:</label>
+                <input type="number" id="num4" name="num4" min="1" max="100" required>
+                
+                <label for="num5">Número 5:</label>
+                <input type="number" id="num5" name="num5" min="1" max="100" required>
+                
+                <label for="num6">Número 6:</label>
+                <input type="number" id="num6" name="num6" min="1" max="100" required>
+                
+                <button type="submit" class="botao">Verificar Sorte</button>
+            </form>
+
+            <div id="resultado">
+                <p id="descontoMensagem"></p>
+            </div>
+        </section>
+
+        <section class="definir-preco">
+            <h2>Defina o valor para seu produto ou serviço</h2>
+            <form id="formPreco">
+                <label for="valorEscolhido">Qual valor você gostaria de pagar?</label>
+                <input type="number" id="valorEscolhido" name="valorEscolhido" min="0" step="0.01" required>
+                
+                <button type="submit" class="botao">Calcular Desconto</button>
+            </form>
+
+            <div id="desconto"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Poketoys. Localização: Rio de Janeiro/RJ - Brasil</p>
+        <p>poketoys@gmail.com - (21) 2424-4321</p>
+    </footer>
+
+    <script src="../JAVASCRIPT/jogo.js"></script>
+</body>
+</html>

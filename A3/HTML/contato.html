@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contato - Poketoys</title>
+</head>
+<body>
+    <header>
+        <h1>Poketoys</h1>
+        <section class="navegacao">
+            <div class="botoes-navegacao">
+                <a href="index.html" class="botao">Home</a>
+                <a href="sobre.html" class="botao">Sobre</a>
+                <a href="produtos.html" class="botao">Produtos</a>
+                <a href="contato.html" class="botao">Contato</a>
+                <a href="jogo.html" class="botao">Jogo da Sorte</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="contato">
+            <h2>Fale Conosco</h2>
+            <form id="formContato">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="telefone">Telefone de contato:</label>
+                <input type="tel" id="telefone" name="telefone" required pattern="[0-9]+" title="Digite apenas números." required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Div para exibir a mensagem de conclusão -->
+            <div id="mensagemConclusao" style="display: none; margin-top: 20px; color: #4b3fb3; font-weight: bold;">
+                Obrigado por entrar em contato! <br>Retornaremos em breve.</br>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Poketoys. Localização: Rio de Janeiro/RJ - Brasil</p>
+        <p>poketoys@gmail.com - (21) 2424-4321</p>
+    </footer>
+
+    <script>
+        // Script para exibir a mensagem de conclusão
+        document.getElementById('formContato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio real do formulário
+            document.getElementById('mensagemConclusao').style.display = 'block'; // Exibe a mensagem de conclusão
+            this.reset(); // Reseta os campos do formulário
+        });
+    </script>
+</body>
+</html>

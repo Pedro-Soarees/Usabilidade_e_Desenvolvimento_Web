@@ -1,0 +1,382 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    color: #4b3fb3;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1; 
+}
+/* Header */
+header {
+    background-color: #003a70;
+    color: #F8D407;
+    padding: 20px; /* Ajuste o padding do header */
+    text-align: center;
+    margin-bottom: 10px; /* Reduz espaço entre o header e o conteúdo abaixo */
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0; 
+}
+
+.navegacao {
+    margin-top: 0px; /* Diminui o espaço acima da navegação */
+    margin-bottom: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.botoes-navegacao {
+    margin-top: 0px; 
+}
+
+.botao {
+    display: inline-block;
+    margin: 0px;
+    padding: 15px 40px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #003a70;
+    border: 2px solid #003a70;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #ffcc00;
+    color: #003a70;
+    border: 2px solid #ffcc00;
+    cursor: pointer;
+}
+
+/*---------- PÁGINA PRINCIPAL - INDEX --------------*/
+.text01 {
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text01 h1 {
+    color: #003a70;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.imagem-home {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (caso necessário) */
+    margin-top: 20px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.imagem-home img {
+    max-width: 80%; /* Limita o tamanho da imagem */
+    height: auto;
+    border-radius: 8px;
+} 
+
+/*-----------------------------------------------------------------*/
+
+/*-------- PÁGINA CONTATO --------*/
+
+.contato {
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contato h2 {
+    color: #003a70;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    color: #4b3fb3;
+    margin-bottom: 20px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #003a70;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button.botao-enviar {
+    background-color: #003a70;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.botao-enviar:hover {
+    background-color: #ffcc00;
+    color: #003a70;
+}
+
+/*------------------------------------------------------------*/
+
+/*-------- FORMULÁRIO --------*/
+.contato {
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato h2 {
+    color: #003a70;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #003a70;
+}
+
+form input,
+form textarea,
+form button {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Ajusta a largura para preencher o container */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4b3fb3;
+    outline: none;
+}
+
+form button {
+    background-color: #003a70;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ffcc00;
+    color: #003a70;
+}
+
+#mensagemConclusao {
+    text-align: center;
+    font-size: 16px;
+    color: #4b3fb3;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/*-------------------------------------------------------------*/
+
+/*-------- JOGO  --------*/
+
+/* Jogo da Sorte */
+.jogo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.jogo h2 {
+    color: #003a70;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.jogo label {
+    display: block;
+    margin-top: 10px;
+}
+
+.jogo input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.jogo button {
+    margin-top: 20px;
+    background-color: #003a70;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.jogo button:hover {
+    background-color: #ffcc00;
+    color: #003a70;
+}
+
+/* Definir Preço */
+.definir-preco {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.definir-preco label {
+    display: block;
+    margin-top: 10px;
+}
+
+.definir-preco input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.definir-preco button {
+    margin-top: 20px;
+    background-color: #003a70;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.definir-preco button:hover {
+    background-color: #ffcc00;
+    color: #003a70;
+}
+
+/*------------------------------------*/
+
+/*-------- PRODUTOS ---------*/
+
+/* Página Produtos */
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.produto img {
+    width: 40%;
+    height: auto;
+    border: 2px solid #003a70;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.produtos h1 { 
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 20px;
+    color: #003a70; 
+}
+
+
+.produto h2 {
+    color: #003a70;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.produto p {
+    color: #4b3fb3;
+    font-size: 15px;
+}
+
+
+/*---------------------------------*/
+
+/* -------- FOOTER -------- */
+footer {
+    background-color: #003a70;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
