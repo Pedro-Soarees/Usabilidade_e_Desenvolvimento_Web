@@ -41,11 +41,6 @@
 
                 <button type="submit">Enviar</button>
             </form>
-
-            <!-- Div para exibir a mensagem de conclusão -->
-            <div id="mensagemConclusao" style="display: none; margin-top: 20px; color: #4b3fb3; font-weight: bold;">
-                Obrigado por entrar em contato! <br>Retornaremos em breve.</br>
-            </div>
         </section>
     </main>
 
@@ -54,12 +49,14 @@
         <p>poketoys@gmail.com - (21) 2424-4321</p>
     </footer>
 
+    <!-- js que estava no forms js mas ficou dando errado até eu desistir e puxar pro html, agora ele funciona... -->
     <script>
-        // Script para exibir a mensagem de conclusão
         document.getElementById('formContato').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita o envio real do formulário
-            document.getElementById('mensagemConclusao').style.display = 'block'; // Exibe a mensagem de conclusão
-            this.reset(); // Reseta os campos do formulário
+            event.preventDefault(); // Impede o envio real do formulário para não recarregar a página
+
+            // Exibe o alert com a mensagem de confirmação
+            alert("Obrigado por entrar em contato. \nRetornaremos em breve!");
+            this.reset();
         });
     </script>
 </body>
